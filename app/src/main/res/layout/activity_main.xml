@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:hint="Email"
             android:layout_marginHorizontal="10dp"
-
+            android:id="@+id/txtEmail"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -41,14 +41,29 @@
             android:layout_width="match_parent"
             android:hint="Password"
             android:layout_marginHorizontal="10dp"
-
+            android:id="@+id/txtPassword"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Sign up here!"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:id="@+id/txtCreate"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:text="LOG IN"
+        android:backgroundTint="#033750"
+        android:textSize="20sp"
+        android:textColor="#2196F3"
+        android:id="@+id/btnLogin"
         android:layout_gravity="center"
-        android:text="Entrar"
-        android:textColor="#fff"
         />
 </LinearLayout>
