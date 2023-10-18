@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_wishlist"
     android:orientation="vertical"
-    android:background="#e7ffff">
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="wrap_content"
+    android:background="#e7ffff"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-    ><androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </androidx.appcompat.widget.Toolbar>
-    </com.google.android.material.appbar.AppBarLayout>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listviewBooks"
-
+        android:id="@+id/idBottomBar"
+        app:menu="@menu/menu"
+        android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
+        app:backgroundTint="#3950A1A1"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@color/black"
         />
 
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
